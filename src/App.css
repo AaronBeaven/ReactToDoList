@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* .to-do-list{
+  color: blue;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  font-size: 2rem;
+} */
+/* li{
+  list-style: none;
+
+} */
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.to-do-list  {
+  list-style: none;
+  padding-left: 0;
+
+  text-align: center;
+} 
+
+ul{
+  padding: 0;
+}
+.to-do-list .listItems li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 0px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+  text-align: center;
+  border-style: dashed;
+  /* border-radius: 10; */
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.to-do-list .listItems .green{
+  background-color: green;
+}
+.to-do-list .listItems .yellow{
+  background-color: yellow;
+}
+.to-do-list .listItems .grey{
+  background-color: grey; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
